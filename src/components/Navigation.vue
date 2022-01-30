@@ -7,6 +7,10 @@
       <h1 class="font-weight-light" @click="navigateHome">Jeff</h1>
       <h1 class="font-weight-thin" @click="navigateHome">Welder</h1>
       <v-spacer />
+      <!-- <v-divider light inset vertical></v-divider> -->
+      <v-btn icon plain>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
       <!-- <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           v-for="link in links"
@@ -16,7 +20,7 @@
           :to="link.path"
         >{{ link.name }}</v-btn>
       </v-toolbar-items> -->
-      <v-spacer />
+      <!-- <v-spacer /> -->
       <!-- <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer">
       </v-app-bar-nav-icon>
       <v-navigation-drawer class="hidden-md-and-up" v-model="drawer" right app absolute>

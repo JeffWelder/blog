@@ -12,6 +12,9 @@
           Welcome to Jeff's Blog
         </h1>
         <p>{{ message }}</p>
+          <!-- <vue-markdown># H1 HELLO WORLD
+            i am a ~~tast~~ **test**.</vue-markdown> -->
+            <vue-markdown>{{ fileContents }}</vue-markdown>
       </v-col>
     </v-row>
   </v-container>
@@ -19,12 +22,15 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import VueMarkdown from 'vue-markdown';
+import Test from '../markdown/test.md';
 
 export default Vue.extend({
   name: 'HelloWorld',
-
+  components: { VueMarkdown },
   data: () => ({
-    message: 'Hello World!',
+    message: '# Hello World!',
+    fileContents: '',
   }),
 });
 </script>
