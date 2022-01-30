@@ -2,8 +2,9 @@
   <v-app-bar app flat>
     <v-container class="py-0 fill-height">
       <v-avatar class="mr-10 pa-1" color="secondary">
-        <v-img src="@/assets/bluejay_logo.png" alt="Logo" contain @click="navigateHome" />
-      </v-avatar>
+        <v-img src="../../public/homepage/bluejay_logo.png" alt="Logo" contain 
+        @click="navigateHome" />
+      </v-avatar> 
       <h1 class="font-weight-light" @click="navigateHome">Jeff</h1>
       <h1 class="font-weight-thin" @click="navigateHome">Welder</h1>
       <v-spacer />

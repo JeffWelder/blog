@@ -2,12 +2,12 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <v-img
+        <!-- <v-img
           :src="require('../assets/bluejay_logo.png')"
           class="my-3"
           contain
           height="200"
-        />
+        /> -->
         <vue-markdown :source="fileContents"></vue-markdown>
       </v-col>
     </v-row>
